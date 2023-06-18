@@ -1,0 +1,52 @@
+{
+  "name": "user-management",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular-material-components/datetime-picker": "^9.0.0",
+    "@angular/animations": "^16.0.3",
+    "@angular/cdk": "^16.0.1",
+    "@angular/common": "^16.0.3",
+    "@angular/compiler": "^16.0.3",
+    "@angular/core": "^16.0.3",
+    "@angular/forms": "^16.0.3",
+    "@angular/material": "^16.0.1",
+    "@angular/platform-browser": "^16.0.3",
+    "@angular/platform-browser-dynamic": "^16.0.3",
+    "@angular/router": "^16.0.3",
+    "@auth0/angular-jwt": "^5.1.2",
+    "@popperjs/core": "^2.11.7",
+    "animate.css": "^4.1.1",
+    "echarts": "^5.4.2",
+    "moment": "^2.29.4",
+    "ngx-echarts": "^16.0.0",
+    "ngx-toastr": "^17.0.2",
+    "rxjs": "~7.5.0",
+    "tailwind": "^4.0.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.13.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.0.2",
+    "@angular/cli": "~16.0.2",
+    "@angular/compiler-cli": "^16.0.3",
+    "@types/jasmine": "~4.3.0",
+    "autoprefixer": "^10.4.14",
+    "jasmine-core": "~4.5.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2",
+    "typescript": "~5.0.4"
+  }
+}

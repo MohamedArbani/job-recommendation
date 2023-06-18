@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~animate.css/animate.min.css";
+@import "ngx-toastr/toastr";
+
+:root {
+    --primary-color: #ff5000;
+    --primary-color-op-01: rgba(255, 81, 0, 0.1);
+    --second-color: #ff5f14;
+    --secondary-color: #ffa24b9e;
+    --input-border: #000;
+    --shop-plugin-text-color: #353541;
+    --pink-color-primary: rgb(234, 58, 114);
+    --pink-color-secondary: rgb(228, 42, 93);
+    --pink-color-soft: rgb(246, 160, 189);
+    --dark-blue-color-primary: rgb(28, 47, 89);
+    --dark-blue-color-secondary: rgb(19, 33, 69);
+    --dark-blue-color-soft: rgb(144, 154, 176);
+  }

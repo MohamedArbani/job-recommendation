@@ -1,0 +1,53 @@
+<nav class="top-0 sticky z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 bg-gray-900">
+  <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+    <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+      <div class="flex justify-center items-center gap-3">
+        <a routerLink="/"
+          class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white">Job Finder</a>
+      </div><button
+        class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+        type="button" (click)="toggleNavbar()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" class="fill-slate-200">
+          <path d="M3 5 A 1.0001 1.0001 0 1 0 3 7L21 7 A 1.0001 1.0001 0 1 0 21 5L3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13L21 13 A 1.0001 1.0001 0 1 0 21 11L3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19L21 19 A 1.0001 1.0001 0 1 0 21 17L3 17 z" />
+        </svg>
+      </button>
+    </div>
+    <div class="lg:flex flex-grow items-center lg:bg-transparent lg:shadow-none"
+      [ngClass]="{ hidden: !showMenu, block: showMenu }">
+      <div *ngIf="userIsAuthenticated" class="flex">
+        <a routerLink="/jobs" class="inline-block text-sm font-bold leading-relaxed mr-4 py-2 whitespace-nowrap text-white hover:text-opacity-70">Jobs</a>
+      </div>
+      <div *ngIf="userIsAuthenticated" class="flex">
+        <a routerLink="/auth/profile" class="inline-block text-sm font-bold leading-relaxed mr-4 py-2 whitespace-nowrap text-white hover:text-opacity-70">Profile</a>
+      </div>
+      <ul class="flex flex-row list-none lg:ml-auto gap-4 justify-between">
+        <ng-container *ngIf="!userIsAuthenticated">
+          <li class="flex items-center">
+            <button routerLink="/auth/login"
+              class="flex text-center items-center justify-center w-full pt-2 pr-6 pb-2 pl-6 text-base font-medium text-white bg-indigo-600 rounded-xl transition duration-500 ease-in-out transform hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              Login
+            </button>
+          </li>
+          <li class="flex items-center">
+            <button routerLink="/auth/sign-up"
+              class="flex text-center items-center justify-center w-full pt-2 pr-6 pb-2 pl-6 text-base font-medium text-indigo-300 border border-indigo-300 rounded-xl transition duration-500 ease-in-out transform hover:bg-indigo-300 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              Sign Up
+            </button>
+          </li>
+        </ng-container>
+
+        <ng-container *ngIf="userIsAuthenticated">
+          <li class="flex items-center text-white">
+            Welcome <strong class="ps-1"> {{user?.name}}</strong>
+          </li>
+          <li class="flex items-center">
+            <button (click)="logout()"
+              class="flex text-center items-center justify-center w-full pt-2 pr-6 pb-2 pl-6 text-base font-medium text-red-400 border border-red-400 rounded-xl transition duration-500 ease-in-out transform hover:bg-red-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+              Logout
+            </button>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+</nav>

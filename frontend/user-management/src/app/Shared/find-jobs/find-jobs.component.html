@@ -1,0 +1,61 @@
+<!-- component -->
+<div
+  class="bg-white pt-12 pr-0 pb-12 pl-0 mt-0 mr-auto mb-0 ml-auto sm:py-16 lg:py-20"
+>
+  <div
+    class="pt-0 pr-4 pb-0 pl-4 mt-0 mr-auto mb-0 ml-auto max-w-7xl sm:px-6 lg:px-8"
+  >
+    <div
+      class="pt-0 pr-4 pb-0 pl-4 mt-0 mr-auto mb-0 ml-auto max-w-4xl sm:px-6 lg:px-8"
+    >
+      <div
+        class="pt-0 pr-4 pb-0 pl-4 mt-0 mr-auto mb-0 ml-auto sm:flex sm:items-center sm:justify-between"
+      >
+        <div>
+          <p class="text-xl font-bold text-gray-900">Open Positions</p>
+          <p class="text-sm mt-1 mr-0 mb-0 ml-0 font-semi-bold text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipis
+          </p>
+        </div>
+        <div class="mt-4 mr-0 mb-0 ml-0 sm:mt-0">
+          <p class="sr-only">Search Position</p>
+          <div class="relative">
+            <div
+              class="flex items-center pt-0 pr-0 pb-0 pl-3 absolute inset-y-0 left-0 pointer-events-none"
+            >
+              <p>
+                <svg
+                  class="w-5 h-5 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewbox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21
+                      21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </p>
+            </div>
+            <input
+              placeholder="Search Positions "
+              type="search"
+              class="w-40 h-10 pl-10 pr-4 text-sm text-gray-700 bg-white border border-gray-200 rounded-lg xl:transition-all xl:duration-300 xl:w-60 xl:focus:w-72 focus:border-indigo-500 hover:border-indigo-200 focus:outline-none focus:ring focus:ring-indigo-500 dark:placeholder-gray-400 focus:ring-opacity-20"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="shadow-xl mt-8 mr-0 mb-0 ml-0 pt-4 pr-10 pb-4 pl-10 flow-root rounded-lg sm:py-2"
+      >
+        <div class="pt--10 pr-0 pb-10 pl-0 my-5 h-96 overflow-y-auto overflow-x-visible">
+          <app-job-item *ngFor="let item of items" [item]="item"></app-job-item>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
