@@ -50,6 +50,15 @@ Password : `root1234`
 With `admin` and `PUBLIC` roles
 <img src="images/neo4-step3.png">
 
+#### NB⚠️
+Please make sure that your Neo4J Database is running on :
+```
+neo4j://localhost:7687
+```
+If it's not, go to the `server/.env` file and change the `NEO4J_URI`
+```
+NEO4J_URI=[neo4j|bolt]://[host]:[port]
+```
 ### Backend
 Run this command :
 ```bash
