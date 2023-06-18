@@ -1,9 +1,9 @@
-<h1 align="center">User Task Mangement Application
+<h1 align="center">Job Recommendation System
 
 <a href="https://www.producthunt.com/posts/awesome-github-profiles?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-awesome-github-profiles" target="_blank"></h1>
 <div align="center">
 <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Badge"/>
-<a href="https://github.com/MohamedArbani"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=UserTaskMA&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
+<a href="https://github.com/MohamedArbani"><img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=JobRecommendation&color=%230076D6&style=flat&logo=google-chrome&logoColor=%230076D6" alt="website"/></a>
 
 <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
 <a href="https://discord.gg/yugioh"><img src="https://img.shields.io/discord/733027681184251937.svg?style=flat&label=Join%20Community&color=7289DA" alt="Join Community Badge"/></a>
@@ -30,11 +30,25 @@
 - [REAZZAKI Safae](https://github.com/REZZAKI-Safae)
 
 
-## User Management - MEAN Stack - Full App
+## Job Recommendation - NEAN Stack - Full App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
 
 ## Installation
+
+## Database - Neo4J Desktop
+
+### 1. Run Neo4J Desktop :
+<img src="images/neo4j-step1.png">
+
+### 2. Open your graph database in Neo4J Browser
+<img src="images/neo4j-step2.png">
+
+### 3. Create a user in Neo4J :
+Username : `root`
+Password : `root1234`
+With `admin` and `PUBLIC` roles
+<img src="images/neo4-step3.png">
 
 ### Backend
 Run this command :
